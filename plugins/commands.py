@@ -271,7 +271,7 @@ async def start(client:Client, message):
             buttons = [[
                 InlineKeyboardButton(text="♻️ ᴠᴇʀɪғʏ 🎭", url=verify)
             ],[
-                InlineKeyboardButton(text="ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ❓", url=settings['tutorial']),
+                InlineKeyboardButton(text="ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ❓", url=settings['https://t.me/MovieDawnloadHub_Tutorial']),
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             if await db.user_verified(user_id): 
@@ -279,7 +279,7 @@ async def start(client:Client, message):
             else:            
                 msg = script.SECOND_VERIFICATION_TEXT if is_second_shortener else script.VERIFICATION_TEXT
             d = await m.reply_text(
-                text=msg.format(message.from_user.mention, get_status),
+                text=msg.format(message.from_user.mention, get_status()),
                 protect_content = False,
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
