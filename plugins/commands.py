@@ -267,7 +267,7 @@ async def start(client:Client, message):
             verify_id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=7))
             await db.create_verify_id(user_id, verify_id)
             temp.CHAT[user_id] = grp_id
-            verify = await get_shortlink(f"https://telegram.me/Dawnload_Hub_Bot?start=notcopy_{user_id}_{verify_id}_{file_id}" , grp_id, is_second_shortener, is_third_shortener , pm_mode=pm_mode)
+            verify = await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=notcopy_{user_id}_{verify_id}_{file_id}" , grp_id, is_second_shortener, is_third_shortener , pm_mode=pm_mode)
             buttons = [[
                 InlineKeyboardButton(text="♻️ ᴠᴇʀɪғʏ 🎭", url=verify)
             ],[
