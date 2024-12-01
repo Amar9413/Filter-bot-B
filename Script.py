@@ -107,8 +107,7 @@ User - {}"""
 ❗️ ʟᴀɴɢᴜᴀɢᴇ - {languages}</b>
 """
 
-    FILE_CAPTION = """<a href='https://t.me/MovieDawnloadHub'><b>ɴᴀᴍᴇ : {file_name}\n\n#1ˢᵗ ᵒⁿ 🅃🄴🄻🄴🄶🅁🄰🄼 
-ᵐᵒᵛⁱᵉˢ, ʷᵉᵇ ˢᵉʳⁱᵉˢ ᵃⁿᵈ ᵗᵛ ˢʰᵒʷˢ</b></a>"""
+    FILE_CAPTION = """<b><a href='telegram.me/MovieDawnloadHub'>{file_name}.</a>\n\n#1ˢᵗ ᵒⁿ 🅃🄴🄻🄴🄶🅁🄰🄼 \nᵐᵒᵛⁱᵉˢ ʷᵉᵇ ˢᵉʳⁱᵉˢ ᵃⁿᵈ ᵗᵛ ˢʰᵒʷˢ</b>\n<blockquote>𝖩𝗈𝗂𝗇➥「@moviedawnloadhub」</blockquote>"""
 
     RESTART_TXT = """<b>
 📅 Dᴀᴛᴇ : <code>{}</code>
