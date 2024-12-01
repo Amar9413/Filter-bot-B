@@ -271,7 +271,7 @@ async def start(client:Client, message):
             buttons = [[
                 InlineKeyboardButton(text="♻️ ᴠᴇʀɪғʏ 🎭", url=verify)
             ],[
-                InlineKeyboardButton(text="ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ❓", url=settings['Tutorial']),
+                InlineKeyboardButton(text="ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ❓", url=settings['tutorial']),
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             if await db.user_verified(user_id): 
